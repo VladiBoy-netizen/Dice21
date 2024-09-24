@@ -4,7 +4,6 @@
     {
         static void Main(string[] args)
         {
-            //The program
             Console.Title = "Dice 21";
             int playerCash = 250;
 
