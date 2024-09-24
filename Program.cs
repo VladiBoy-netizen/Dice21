@@ -27,8 +27,11 @@
                         inptCash = int.Parse(inputCash);
                         if (inptCash > playerCash)
                         {
-                            print("You don't have those money");
-                            print("You putted in 250");
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            print("You don't have " + inptCash);
+                            Console.ForegroundColor = ConsoleColor.DarkYellow;
+                            print("You putted in " + playerCash);
+                            Console.ResetColor();
                             inptCash = playerCash;
                             print("\nPress any key to continue");
                             Console.ReadKey();
@@ -37,7 +40,9 @@
                         break;
                     }
                     catch
-                    { print("It's not a number!\nTry again"); }
+                    {
+                        print("It's not a number!\nTry again"); 
+                    }
                 }
 
                 bool game = true;
@@ -62,6 +67,7 @@
                             print("You got: " + playerPoints);
                             if (playerPoints > 21)
                             {
+                                Console.ForegroundColor = ConsoleColor.Red;
                                 print("You busted!");
                                 playerCash = lose(playerCash, inptCash);
                                 game = false;
