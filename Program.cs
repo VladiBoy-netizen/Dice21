@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.Title = "Dice 21";
-            int playerCash = 250;
+            int playerCash = 50;
 
             int playerPoints = 0;
             int cpuPoints = 0;
@@ -126,6 +126,8 @@
             Console.ForegroundColor = ConsoleColor.Black;
             print("                                      \r\n ███▀▀▀██ ███▀▀▀███ ███▀█▄█▀███ ██▀▀▀ \r\n ██    ██ ██     ██ ██   █   ██ ██    \r\n ██   ▄▄▄ ██▄▄▄▄▄██ ██   ▀   ██ ██▀▀▀ \r\n ██    ██ ██     ██ ██       ██ ██    \r\n ███▄▄▄██ ██     ██ ██       ██ ██▄▄▄ \r\n                                      \r\n ███▀▀▀███ ▀███  ██▀ ██▀▀▀ ██▀▀▀▀██▄  \r\n ██     ██   ██  ██  ██    ██     ██  \r\n ██     ██   ██  ██  ██▀▀▀ ██▄▄▄▄▄▀▀  \r\n ██     ██   ██  █▀  ██    ██     ██  \r\n ███▄▄▄███    ▀█▀    ██▄▄▄ ██     ██▄ \r\n                                      ");
             Console.ResetColor();
+
+            Console.ReadKey();
 
             // From python stuff
             static void print(string text)
